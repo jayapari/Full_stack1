@@ -1,0 +1,23 @@
+.container{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height:500px;
+   width:100%;
+}
+button{
+ background-color:rgb(247, 9, 128);
+ color:white;
+ height:10%;
+ width:15%;
+ box-shadow: 2px 2px rgb(76, 71, 71);
+ border-radius: 5px;
+ box-shadow: 1px solid black ;
+ background: linear-gradient(to right, black 50%,rgb(247, 9, 128) 50%);
+ background-size: 200% ;
+ background-position: right bottom;
+ transition: all .5s ease-out;
+}
+button:hover{
+   background-position: left bottom;
+}

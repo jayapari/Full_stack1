@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    window(global object) -->    DOM(Document object model) --> BOM(Browser document model)
+    Things to keep in mind
+    1. getElementsByClassName() and getElementsByTagName() both use document obj
+    2. both return multiple obj
+    3. both return whatever is not array
+
+    Access element -->getElementsByClassName(),getElementsById(),getElementsByTagName()
+
+    document.querySelector() -->has single obj output
+    document.querySelectorAll() -->has multiple obj output
+
+    update page--> innerHTML (for get and set html content, it will not display hidden display element)
+            -->.outerHTML ()
+            -->.textContent(it will also show the hidden display element)
+            -->innerText
+
+     Adding new element using JS
+     createElement() 
+     to add in content then --> .appendChild()
+     
+     <!-- slow process -->
+     createTextNode
+     let newPara=documnet.createElement('p');
+     let textPara=document.createTextNode('I am new para');
+     newPara=appendChild(textPara);
+     myPara.appendChild(newPara);
+
+     <!-- fast Process -->
+     let newPara=documnet.createElement('p');
+     newPara.textContent='I m the text';
+     content.appendChild(newPara);
+
+     <!-- add tag element in previous element at any location -->
+     .insertAdjacentHTML()
+        --> 2 arg (where/position, what text/content)
+        -->beforeBegin,afterBegin, beforeEnd, afterEnd
+        
+        let content= document.querySelector('.cca');
+        let newText=document.createElement('h3');
+        newText.textContent("ABCD");
+        content.addAdjacentElement('beforeBegin',newText);
+
+     <!-- remove tag from content    -->
+     .removeChild()
+      ---> know parent and child element
+
+      parentElement.removeChild(childElement);
+     
+      <!-- to find parent element  -->
+    let parentElement= childElement.parent();
+          childElement.removeChild(childPart);
+
+
+          <!-- Through js style page -->
+         1..style
+             let content= $0;
+             content.style.color='red';
+
+         2 .cssText
+            content.style.cssText='color:green; background-color:yellow; font-size: 20px;';
+
+         3 .setAttribute
+             content.setAttribute("style", "color:white; background-color:white");
+             content.setAttribute("id", "HeadingKid");
+           
+          4 .className  
+              let content=$0;
+              content.className;
+
+         5 .classList
+                 content.classLIst;
+    <!-- window consist of DOM ,BOM & JS core ---- in inspect type document to get document model 
+    when Js want to communicate through browser then it is BOM-->
+</body>
+</html>

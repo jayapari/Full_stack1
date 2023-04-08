@@ -1,0 +1,137 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wraper
+{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.container
+{
+    height:100%;
+    max-width: 1000px;
+    margin:0 auto;
+    padding:20px;
+}
+.inner-circle
+{   position:absolute;
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+    display:inline-block;
+    margin-left: 18%;
+    margin-top:28%;
+    background-color: rgb(245, 220, 220);
+    z-index:1;
+    animation: imganime1 10s infinite linear;
+}
+.mid-circle
+{
+    position:absolute;
+    margin-left: 40%;
+    margin-top:20%;
+    height:450px;
+    width:450px;
+    border-radius: 50%;
+    background-color: rgb(239, 153, 239);
+    display:inline-block;
+     z-index:-1;
+    margin-left: 13%;
+    margin-top:22.5%;
+}
+.outer-circle
+{   position:absolute;
+    height:550px;
+    width:550px;
+    border-radius: 50%;
+    display:inline-block;
+    border:2px solid rgb(179, 177, 177);   
+    margin-left: 10%;
+    margin-top:20%;
+    z-index:1;
+    animation: imganime2 10s infinite linear;
+}
+.img1{
+    height:40%;
+    width:40%;
+}
+.img2{
+    height:70%;
+    width:70%;
+}
+#img-pos1{
+    position:absolute;
+    z-index:2;
+    margin-left: 60%;
+    margin-top:40%;
+    
+}
+#img-pos2{
+    position:absolute;
+    z-index:2;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+#img-pos3{
+    position:absolute;
+    z-index:2;
+    margin-left: 100px;
+    margin-top:-60px;
+}
+#img-pos4
+{
+    position:absolute;
+    z-index:2;
+    margin-left: -80px;
+   
+}
+#img-pos5{
+    position:absolute;
+    z-index:2;
+    margin-left: 120px;
+    margin-top:-100px;
+}
+#img-pos6{
+    position:absolute;
+    z-index:2;
+    margin-left: -120px;
+    margin-top:100px;
+}
+#img-pos7{
+    position:absolute;
+    z-index:2;
+    margin-left:430px;
+    margin-top:50px;
+}
+#img-pos8{
+    position:absolute;
+    z-index:2;
+    margin-left:-50px;
+    margin-top:350px;
+}
+#img-pos9{
+    position:absolute;
+    z-index:2;
+    margin-left:350px;
+    margin-top:350px;
+}
+@keyframes imganime1 {
+    from{
+        transform:rotateZ(0deg)
+    }
+    to{
+        transform:rotateZ(360deg)
+    }
+}
+@keyframes imganime2 {
+    from{
+        transform:rotateZ(360deg)
+    }
+    to{
+        transform:rotateZ(0deg)
+    }
+}

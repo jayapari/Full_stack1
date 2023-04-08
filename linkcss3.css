@@ -1,0 +1,16 @@
+.container{
+    display:flex;
+    border:2px solid green;
+    height:400px;
+    width:400px;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+}
+.box{
+    border:1px solid red;
+    background-color: aqua;
+    height:400px;
+}
+.para-sf{
+    color:green !important;
+}
